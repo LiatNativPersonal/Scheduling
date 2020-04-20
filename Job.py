@@ -5,8 +5,6 @@ Created on Thu Mar 26 16:31:58 2020
 @author: liatn
 """
 
-from JobType import JobType
-
 class Job:
     
     def __init__(self, job_type, processing_time, index):
@@ -15,7 +13,7 @@ class Job:
         self.index = index
         
     def printJob(self):
-        print("Job {}: Job Type= {}, processing time= {} \n".format(self.index, (self.job_type).name), self.proc_time)
+        print("Job {}: Job Type={}, processing time={}".format(self.index, (self.job_type).name, self.proc_time))
         
     
         

@@ -8,5 +8,13 @@ Created on Thu Mar 26 16:29:20 2020
 from enum import Enum
 
 class JobType(Enum):
-    TYPE_1 = 1
-    TYPE_2 = 2
+    J1 = 1
+    J2 = 2
+    
+    def getJobTypeFromInt(intJobType):
+        if intJobType == 1:
+            return JobType.J1
+        elif intJobType == 2:
+            return JobType.J2
+        else:
+            return 0
